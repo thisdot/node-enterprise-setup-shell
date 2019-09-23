@@ -2,12 +2,13 @@
   "name": "nodejs-enterprise-api",
   "version": "1.0.0",
   "description": "Sample API for enterprise applications",
-  "main": "index.js",
+  "main": "src/server.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
