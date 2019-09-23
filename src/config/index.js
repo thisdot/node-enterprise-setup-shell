@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 
 // Set the NODE_ENV to 'development' by default
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
@@ -10,7 +10,7 @@ if (!envFound) {
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 }
 
-export default {
+const config = {
   /**
    * Your favorite port
    */
@@ -27,3 +27,5 @@ export default {
     prefix: '/api'
   }
 };
+
+module.exports = config;
