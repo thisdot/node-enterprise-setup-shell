@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/devpato/nodejs-enterprise-api/issues"
   },
-  "homepage": "https://github.com/devpato/nodejs-enterprise-api#readme"
+  "homepage": "https://github.com/devpato/nodejs-enterprise-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
