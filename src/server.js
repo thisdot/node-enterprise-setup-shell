@@ -43,7 +43,7 @@ const onListening = () => {
   debug('Listening on ' + bind);
   console.log(`
   ************************************************
-  Server listening on port: ${config.port} 
+  🚀  Server listening on port: ${config.port} 🚀
   ************************************************
 `);
 };
