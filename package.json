@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-enterprise-api",
+  "version": "1.0.0",
+  "description": "Sample API for enterprise applications",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devpato/nodejs-enterprise-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "backend",
+    "mongodb",
+    "expressjs"
+  ],
+  "author": "Pato Vargas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devpato/nodejs-enterprise-api/issues"
+  },
+  "homepage": "https://github.com/devpato/nodejs-enterprise-api#readme"
+}
