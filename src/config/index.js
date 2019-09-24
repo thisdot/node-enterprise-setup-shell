@@ -19,7 +19,8 @@ const config = {
   /**
    * That long string from Mongo ATLAS
    */
-  databaseURL: process.env.MONGODB_URI,
+  database_URL_DEV: process.env.MONGODB_URI_DEV,
+  database_URL_PROD: process.env.MONGODB_URI_PROD,
   /**
    * API configs
    */
