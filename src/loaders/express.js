@@ -6,7 +6,6 @@ const apiRoutes = require('../api');
 const mongooseConnection = require('../loaders/mongoose');
 const express = require('express');
 const body_parser = require('body-parser');
-const Report = require('../models/report');
 const cors = require('cors');
 const app = express();
 
