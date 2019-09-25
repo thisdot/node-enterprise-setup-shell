@@ -8,7 +8,7 @@ const express = require('express');
 const body_parser = require('body-parser');
 const cors = require('cors');
 const app = express();
-
+//Morgan take a look
 mongooseConnection.connect();
 
 console.log(`  ✌️ DB loaded and connected!`);
@@ -16,7 +16,7 @@ console.log(`  ✌️ DB loaded and connected!`);
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
 app.use(cors());
-app.use(config.api.prefix, apiRoutes());
+app.use(config().api.prefix, apiRoutes()); //api
 
 /// catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -3,8 +3,7 @@ const config = require('../config');
 
 const mongoDB = {
   async connect() {
-    const mongoDbURI =
-      process.env.NODE_ENV === 'development' ? config.database_URL_DEV : config.database_URL_PROD;
+    const mongoDbURI = config().database_URL;
     const connection = await mongoose.connect(mongoDbURI, {
       useNewUrlParser: true,
       useCreateIndex: true,

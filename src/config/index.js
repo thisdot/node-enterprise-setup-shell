@@ -11,22 +11,44 @@ if (!envFound) {
 }
 
 const config = {
-  /**
-   * Your favorite port
-   */
-  port: parseInt(process.env.PORT, 10),
+  dev: {
+    /**
+     * Your favorite port
+     */
+    port: parseInt(process.env.PORT, 10),
 
-  /**
-   * That long string from Mongo ATLAS
-   */
-  database_URL_DEV: process.env.MONGODB_URI_DEV,
-  database_URL_PROD: process.env.MONGODB_URI_PROD,
-  /**
-   * API configs
-   */
-  api: {
-    prefix: '/api'
+    /**
+     * That long string from Mongo ATLAS
+     */
+    database_URL: process.env.MONGODB_URI_DEV,
+    /**
+     * API configs
+     */
+    api: {
+      prefix: '/api'
+    }
+  },
+  prod: {
+    /**
+     * Your favorite port
+     */
+    port: parseInt(process.env.PORT, 10),
+
+    /**
+     * That long string from Mongo ATLAS
+     */
+    database_URL: process.env.MONGODB_URI_PROD,
+    /**
+     * API configs
+     */
+    api: {
+      prefix: '/api'
+    }
   }
 };
 
-module.exports = config;
+const getConfig = () => {
+  return process.env.NODE_ENV === 'development' ? config.dev : config.prod;
+};
+
+module.exports = getConfig;

@@ -7,12 +7,10 @@ const normalizePort = val => {
   const port = parseInt(val, 10);
 
   if (isNaN(port)) {
-    // named pipe
     return val;
   }
 
   if (port >= 0) {
-    // port number
     return port;
   }
 
@@ -48,7 +46,7 @@ const onListening = () => {
 `);
 };
 
-const port = normalizePort(config.port);
+const port = normalizePort(config().port);
 app.set('port', port);
 
 const server = http.createServer(app);
