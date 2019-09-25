@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha -w 'tests/**/*.js'",
+    "test": "mocha -w './src/**/tests/**/*.js'",
     "coverage": "nyc --reporter=html npm run test",
     "start": "nodemon server.js"
   },
@@ -45,6 +45,7 @@
     "mongoose": "^5.7.1",
     "nodemon": "^1.19.2",
     "nyc": "^14.1.1",
+    "should": "^13.2.3",
     "sinon": "^7.5.0"
   }
 }
