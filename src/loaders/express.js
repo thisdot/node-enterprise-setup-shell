@@ -9,7 +9,8 @@ const body_parser = require('body-parser');
 const cors = require('cors');
 const app = express();
 
-mongooseConnection();
+mongooseConnection.connect();
+
 console.log(`  ✌️ DB loaded and connected!`);
 
 app.use(body_parser.json());
