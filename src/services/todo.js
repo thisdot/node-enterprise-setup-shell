@@ -26,12 +26,10 @@ class TodoService {
     const task = await TaskModel.findById(taskId);
     try {
       if (!task) {
-        const ERROR = new Error('Task not found');
-        ERROR.statusCode = 404;
-        throw ERROR;
+        throw new Error('Task not found');
       }
       return {
-        message: 'Task feched',
+        message: 'Task fetched',
         task: task,
         status: 200
       };
