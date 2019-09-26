@@ -20,7 +20,7 @@ describe('Todo Controller', () => {
   const task = { _id: '5d89973cf47adf55979b38c0', title: 'test', content: 'test', __v: 0 };
   const expectedResult = { status: 201, tasks: [{}], message: '' };
   let res, req;
-  before(() => mongoDB.connect());
+
   beforeEach(function() {
     res = {
       ...expectedResult
@@ -49,9 +49,5 @@ describe('Todo Controller', () => {
       expect(result.tasks.length).to.be.least(1);
       done();
     });
-  });
-
-  afterEach(() => {
-    mongoDB.disconnect();
   });
 });
