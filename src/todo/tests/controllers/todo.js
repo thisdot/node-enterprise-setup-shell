@@ -5,29 +5,17 @@
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 const sinon = require('sinon');
-const httpMocks = require('node-mocks-http');
-
 const expect = chai.expect;
+const Task = require('../../models/task');
 chai.should();
 chai.use(chaiAsPromised);
-require('sinon-mongoose');
 
-const todoController = require('../../controllers/todoController');
-const Task = require('../../models/task');
-const mongoDB = require('../../../loaders/mongoose');
-
+//TEST DRIVEN DEVELOPMENT
 describe('Todo Controller', () => {
-  const task = { _id: '5d89973cf47adf55979b38c0', title: 'test', content: 'test', __v: 0 };
   const expectedResult = { status: 201, tasks: [{}], message: '' };
-  let res, req;
 
-  beforeEach(function() {
-    res = {
-      ...expectedResult
-    };
-  });
-
-  it('shoudl get a valid status', done => {
+  //Testing if the array has a valid status
+  it('should get a valid status', done => {
     const TodoMock = sinon.mock(Task);
 
     TodoMock.expects('find').yields(null, expectedResult);
@@ -39,14 +27,15 @@ describe('Todo Controller', () => {
     });
   });
 
-  it('should at least task have one object', done => {
+  //Testing if the array has at least one value
+  it('should return error', done => {
     const TodoMock = sinon.mock(Task);
 
-    TodoMock.expects('find').yields(null, expectedResult);
+    TodoMock.expects('find').yields(expectedResult, null);
     Task.find((err, result) => {
       TodoMock.verify();
       TodoMock.restore();
-      expect(result.tasks.length).to.be.least(1);
+      expect(err.status).to.not.be.true; //This is the actual test
       done();
     });
   });
