@@ -41,7 +41,7 @@ const onListening = () => {
   debug('Listening on ' + bind);
   console.log(`
   ************************************************
-  🚀  Server listening on port: ${config().port} 🚀
+  🚀  Server listening on port: ${bind} 🚀
   ************************************************
 `);
 };
@@ -52,6 +52,6 @@ app.set('port', port);
 const server = http.createServer(app);
 server.on('error', onError);
 server.on('listening', onListening);
-server.listen(port);
+server.listen(app.get('port'));
 
 module.exports = server;
