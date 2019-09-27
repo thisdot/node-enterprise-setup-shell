@@ -8,11 +8,12 @@ const express = require('express');
 const body_parser = require('body-parser');
 const cors = require('cors');
 const app = express();
-//Morgan take a look
+
 mongooseConnection.connect();
 
 console.log(`  ✌️ DB loaded and connected!`);
 
+//Middleware
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
 app.use(cors());
