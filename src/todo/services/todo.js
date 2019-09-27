@@ -1,16 +1,12 @@
-/*
-    All the business logic is here
-*/
-
-const TaskModel = require('../models/task');
+const Task = require('../models/task');
 
 class TodoService {
   static getTasks() {
-    return TaskModel.find();
+    return Task.find();
   }
 
-  static async getTasksById(id) {
-    return TaskModel.findById(id);
+  static getTasksById(id) {
+    return Task.findById(id);
   }
 }
 
