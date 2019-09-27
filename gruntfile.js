@@ -10,12 +10,12 @@ module.exports = grunt => {
         options: {
           reporter: 'spec'
         },
-        src: ['tests/**/*.js']
+        src: ['./src/**/tests/**/*.js']
       }
     },
     watch: {
       scripts: {
-        files: ['tests/**/*.js'],
+        files: ['./src/**/tests/**/*.js'],
         tasks: ['mochaTest']
       }
     }
