@@ -12,5 +12,3 @@ try {
   });
   module.exports = mongoose.model('Task', taskSchema);
 }
-
-//Take a look to fromClass
