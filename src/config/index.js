@@ -13,7 +13,7 @@ const config = {
     port: parseInt(process.env.PORT, 10),
     database_URL: process.env.MONGODB_URI_DEV,
     api: {
-      prefix: '/api'
+      prefix: '/api-dev'
     }
   },
   prod: {
@@ -25,6 +25,7 @@ const config = {
   }
 };
 
+//Will return the specif configurations based on the enviroment
 const getConfig = () => {
   return process.env.NODE_ENV === 'development' ? config.dev : config.prod;
 };
