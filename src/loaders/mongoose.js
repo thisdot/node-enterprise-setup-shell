@@ -1,18 +1,10 @@
 const mongoose = require('mongoose');
 const config = require('../config');
 
+/*MongoDB Main methods*/
+
 const mongoDB = {
-  async connect() {
-    const mongoDbURI = config().database_URL;
-    const connection = await mongoose.connect(mongoDbURI, {
-      useNewUrlParser: true,
-      useCreateIndex: true,
-      useUnifiedTopology: true
-    });
-    return connection.connection.db;
-  },
-  disconnect() {
-    mongoose.disconnect();
-  }
+  async connect() {},
+  disconnect() {}
 };
 module.exports = mongoDB;
