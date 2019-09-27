@@ -9,6 +9,7 @@ const express = require('express');
 // guaranteed to get dependencies
 const apiRoutes = () => {
   const router = express.Router();
+  //Router level middleware router.use
   router.use(isAuth);
   router.use(todo);
   return router;
