@@ -1,7 +1,25 @@
 'use strict';
 
 module.exports = grunt => {
-  grunt.initConfig({});
+  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', 'Default action');
+  grunt.initConfig({
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec'
+        },
+        src: ['./src/**/tests/**/*.js']
+      }
+    },
+    watch: {
+      scripts: {
+        files: ['./src/**/tests/**/*.js'],
+        tasks: ['mochaTest']
+      }
+    }
+  });
+
+  grunt.registerTask('default', 'watch');
 };

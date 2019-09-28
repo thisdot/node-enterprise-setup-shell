@@ -36,4 +36,20 @@ const onError = error => {
   }
 };
 
+const onListening = () => {
+  const bind = typeof port === 'string' ? 'pipe ' + port : 'port: ' + port;
+  debug('Listening on ' + bind);
+  console.log(`
+    ************************************************
+    🚀  Server listening on ${bind} 🚀
+    ************************************************
+  `);
+};
+const server = http.createServer(app);
+const port = normalizePort(config().port);
+app.set('port', port);
+server.on('error', onError);
+server.on('listening', onListening);
+server.listen(app.get('port'));
+
 module.exports = server;

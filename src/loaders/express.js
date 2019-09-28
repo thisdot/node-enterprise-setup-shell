@@ -11,8 +11,6 @@ const app = express();
 
 mongooseConnection.connect();
 
-console.log(`  ✌️ DB loaded and connected!`);
-
 //Middleware
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
