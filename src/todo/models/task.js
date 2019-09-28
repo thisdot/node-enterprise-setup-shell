@@ -7,11 +7,8 @@
 const mongoose = require('mongoose');
 
 try {
-  module.exports = mongoose.model('Task');
+  module.exports = mongoose.model('NAME OF YOUR MODEL');
 } catch (error) {
-  const taskSchema = mongoose.Schema({
-    title: { type: String, required: true },
-    status: { type: String, required: true }
-  });
-  module.exports = mongoose.model('Task', taskSchema);
+  //YOUR SCHEMA
+  module.exports = mongoose.model('NAME OF YOUR MODEL', taskSchema);
 }

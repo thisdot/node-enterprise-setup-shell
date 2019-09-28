@@ -5,18 +5,10 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
-    mochaTest: {
-      test: {
-        options: {
-          reporter: 'spec'
-        },
-        src: ['./src/**/tests/**/*.js']
-      }
-    },
     watch: {
       scripts: {
-        files: ['./src/**/tests/**/*.js'],
-        tasks: ['mochaTest']
+        files: ['the files you want to take action on'], //./src/**/tests/**/*.js
+        tasks: ['NAME OF YOUR TASK']
       }
     }
   });

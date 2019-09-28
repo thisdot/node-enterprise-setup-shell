@@ -1,18 +1,11 @@
 /* Todo Service */
 
-const Task = require('../models/task');
-
 class TodoService {
-  static getTasks() {
-    return Task.find();
-  }
+  //YOUR STATIC METHODS
 
-  static createTask(title, status) {
-    const task = new Task({
-      title: title,
-      status: status
-    });
-    return task;
+  /* EXMAPLE */
+  static YOUR_FUNCTION_NAME() {
+    return;
   }
 }
 

@@ -3,6 +3,8 @@
 */
 
 const express = require('express');
+
+//Example
 const todo = require('../todo/routes/todo');
 const isAuth = require('./middleware/checkAuth');
 
