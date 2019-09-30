@@ -1,7 +1,9 @@
 const http = require('http');
-const app = require('./loaders/express');
-const config = require('./config');
 const debug = require('debug')('node-enterprise-api');
+//My expressJS app
+const app = require('./loaders/express');
+//Configurations of the Project
+const config = require('./config');
 
 const normalizePort = val => {
   const port = parseInt(val, 10);
