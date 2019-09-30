@@ -25,7 +25,7 @@ const config = {
   }
 };
 
-//Will return the specif configurations based on the enviroment
+//Will return the specific configurations based on the environment
 const getConfig = () => {
   return process.env.NODE_ENV === 'development' ? config.dev : config.prod;
 };
