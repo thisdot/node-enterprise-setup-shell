@@ -3,7 +3,7 @@
 class TodoService {
   //YOUR STATIC METHODS
 
-  /* EXMAPLE */
+  /* EXAMPLE */
   static YOUR_FUNCTION_NAME() {
     return;
   }
