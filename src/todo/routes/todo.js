@@ -1,5 +1,5 @@
 /*
-  Express route controllers for all the endpoints of your todo
+  Express router for all the endpoints of your todo
 */
 
 const express = require('express');
