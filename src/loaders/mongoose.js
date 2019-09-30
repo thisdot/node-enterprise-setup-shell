@@ -8,7 +8,8 @@ const mongoDB = {
     try {
       const mongoDBURI = config().database_URL;
       const connection = await mongoose.connect(mongoDBURI, {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
       });
       console.log(`  ✌️ DB loaded and connected!`);
       return connection.connection.db;
