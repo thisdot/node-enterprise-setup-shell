@@ -6,7 +6,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/thisdot/node-enterprise-setup-shell.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/thisdot/node-enterprise-setup-shell.svg)
 
-# Node Enterprise Setup Shell
+# Node API Enterprise Setup Shell
 
 This is the shell project to get you started with NodeJS in Enterprise.
 
