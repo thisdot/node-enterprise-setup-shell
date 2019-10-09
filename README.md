@@ -49,9 +49,11 @@ If you take a look to the package.json file, you can see I'm using nyc to create
 
 ## Contribute this Open Source project
 
--Fork the repo
--Star the repo
--Submit a PR
+<ul>
+    <li>Fork the repo</li>
+    <li>Star the repo</li>
+    <li>Submit a PR</li>
+</ul>
 
 ## License
 
