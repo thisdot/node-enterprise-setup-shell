@@ -59,6 +59,9 @@ If you are into NodeJS and have seen repetitive things that you add to your Node
     <li>Submit a PR</li>
 </ul>
 
+## Complete Code Example Using The Shell
+https://github.com/thisdot/nodejs-enterprise-setup-tutorial
+
 ## License
 
 -MIT
