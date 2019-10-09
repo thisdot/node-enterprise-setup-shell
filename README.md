@@ -8,6 +8,8 @@
 
 # Node API Enterprise Setup Shell
 
+![](./nodebanner.png)
+
 This is the shell project to get you started with your NodeJS API in Enterprise.
 
 To learn more about this project: https://dev.to/pato_codes/nodejs-setup-shell-open-source-3j3i
@@ -60,6 +62,7 @@ If you are into NodeJS and have seen repetitive things that you add to your Node
 </ul>
 
 ## Complete Code Example Using The Shell
+
 https://github.com/thisdot/nodejs-enterprise-setup-tutorial
 
 ## License
