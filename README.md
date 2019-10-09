@@ -10,6 +10,8 @@
 
 This is the shell project to get you started with NodeJS in Enterprise.
 
+To learn more about this project: https://dev.to/pato_codes/nodejs-setup-shell-open-source-3j3i
+
 ## How to use it?
 
 Very simple if you are starting into the NodeJS world (if you have some knowledge on it) clone this repo and start working on the enterprise project.
