@@ -8,7 +8,7 @@
 
 # Node API Enterprise Setup Shell
 
-This is the shell project to get you started with NodeJS in Enterprise.
+This is the shell project to get you started with your NodeJS API in Enterprise.
 
 To learn more about this project: https://dev.to/pato_codes/nodejs-setup-shell-open-source-3j3i
 
