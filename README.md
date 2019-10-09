@@ -18,16 +18,18 @@ Very simple if you are starting into the NodeJS world (if you have some knowledg
 
 This project has several tools/Code already setup for you:
 
--NodeJS
--ExpressJS
--MongoDB Connection
--Routes
--Schema file
--Moca/Chai
--Grunt
--Nodemon
--Middlewares
--Test coverage with NYC
+<ul>
+    <li>NodeJS</li>
+    <li>ExpressJS</li>
+    <li>MongoDB Connection</li>
+    <li>Routes</li>
+    <li>Schema file</li>
+    <li>Moca/Chai</li>
+    <li>Grunt</li>
+    <li>Nodemon</li>
+    <li>Middlewares</li>
+    <li>Test coverage with NYC</li>
+</ul>
 
 ## Run the project
 
