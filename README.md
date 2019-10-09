@@ -49,6 +49,8 @@ If you take a look to the package.json file, you can see I'm using nyc to create
 
 ## Contribute this Open Source project
 
+If you are into NodeJS and have seen repetitive things that you add to your NodeJS API setups all the time, feel free to add them to the repo.
+
 <ul>
     <li>Fork the repo</li>
     <li>Star the repo</li>
