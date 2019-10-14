@@ -31,6 +31,10 @@ This project has several tools/Code already setup for you:
     <li>Test coverage with NYC</li>
 </ul>
 
+## Setup database configuration
+- `cp .env.example .env`
+- Set required credential in .env
+
 ## Run the project
 
 `npm start`
