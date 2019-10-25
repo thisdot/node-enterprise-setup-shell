@@ -28,7 +28,7 @@ This project has several tools/Code already setup for you:
     <li>MongoDB Connection</li>
     <li>Routes</li>
     <li>Schema file</li>
-    <li>Moca/Chai</li>
+    <li>Mocha/Chai</li>
     <li>Grunt</li>
     <li>Nodemon</li>
     <li>Middlewares</li>
