@@ -43,7 +43,7 @@
     "grunt-mocha-test": "^0.13.3",
     "jsonwebtoken": "^8.5.1",
     "mocha": "^6.2.0",
-    "mongoose": "^5.7.1",
+    "mongoose": "^5.7.5",
     "node-mocks-http": "^1.8.0",
     "nodemon": "^1.19.2",
     "nyc": "^14.1.1",
