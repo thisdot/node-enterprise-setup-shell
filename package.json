@@ -36,7 +36,7 @@
     "chi": "0.0.10",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.2.0",
     "grunt": "^1.0.4",
     "grunt-contrib-watch": "^1.1.0",
