@@ -42,7 +42,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-mocha-test": "^0.13.3",
     "jsonwebtoken": "^8.5.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "mongoose": "^5.7.1",
     "node-mocks-http": "^1.8.0",
     "nodemon": "^1.19.2",
